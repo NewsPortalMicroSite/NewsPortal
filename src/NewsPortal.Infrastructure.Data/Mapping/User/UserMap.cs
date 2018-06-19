@@ -1,7 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
-namespace NewsPortal.Data.Mapping.User
+namespace NewsPortal.Infrastructure.Data.Mapping.User
 {
     public class UserMap : IEntityTypeConfiguration<Domain.Entities.User.User>
     {

@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="AutoMapper\" />
+    <Folder Include="Services\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\NewsPortal.Domain\NewsPortal.Domain.csproj" />
+    <ProjectReference Include="..\NewsPortal.Infrastructure.Data\NewsPortal.Infrastructure.Data.csproj" />
+  </ItemGroup>
+
+</Project>

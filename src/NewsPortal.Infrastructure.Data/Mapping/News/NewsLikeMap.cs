@@ -1,11 +1,9 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿
+using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using NewsPortal.Domain.Entitites.News;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
-namespace NewsPortal.Data.Mapping.News
+namespace NewsPortal.Infrastructure.Data.Mapping.News
 {
     public class NewsLikeMap : IEntityTypeConfiguration<NewsLike>
     {

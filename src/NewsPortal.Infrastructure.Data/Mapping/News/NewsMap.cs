@@ -1,7 +1,8 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿
+using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
-namespace NewsPortal.Data.Mapping.News
+namespace NewsPortal.Infrastructure.Data.Mapping.News
 {
     public class NewsMap : IEntityTypeConfiguration<Domain.Entitites.News.News>
     {

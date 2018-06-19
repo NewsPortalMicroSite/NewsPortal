@@ -2,9 +2,8 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 
-namespace NewsPortal.Data.Common
+namespace NewsPortal.Domain.Entities.Common
 {
     public class PagedList<T> : List<T>, IPagedList<T>
     {
