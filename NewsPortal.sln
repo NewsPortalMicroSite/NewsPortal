@@ -17,9 +17,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4 - Infrastructure", "4 - I
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5 - Tests", "5 - Tests", "{DEC3DA84-EC10-45E2-AD1D-A7204CC3AD84}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NewsPortal.Infrastructure.Data", "src\NewsPortal.Infrastructure.Data\NewsPortal.Infrastructure.Data.csproj", "{CE530D63-F43A-4C29-A0EC-32CCD28E5CE1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NewsPortal.Infrastructure.Data.EF", "src\NewsPortal.Infrastructure.Data\NewsPortal.Infrastructure.Data.EF.csproj", "{CE530D63-F43A-4C29-A0EC-32CCD28E5CE1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NewsPortal.Application", "src\NewsPortal.Application\NewsPortal.Application.csproj", "{8124FE31-555A-4C48-85A9-5A4AB9112773}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NewsPortal.Application", "src\NewsPortal.Application\NewsPortal.Application.csproj", "{8124FE31-555A-4C48-85A9-5A4AB9112773}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NewsPortal.Infrastructure.CrossCutting", "src\NewsPortal.Infrastructure.CrossCutting\NewsPortal.Infrastructure.CrossCutting.csproj", "{6F36347F-92B1-4E1A-93A7-4E9CADB87EAF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{8124FE31-555A-4C48-85A9-5A4AB9112773}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8124FE31-555A-4C48-85A9-5A4AB9112773}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8124FE31-555A-4C48-85A9-5A4AB9112773}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6F36347F-92B1-4E1A-93A7-4E9CADB87EAF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6F36347F-92B1-4E1A-93A7-4E9CADB87EAF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6F36347F-92B1-4E1A-93A7-4E9CADB87EAF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6F36347F-92B1-4E1A-93A7-4E9CADB87EAF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -47,6 +53,7 @@ Global
 		{34141357-F3BF-4B53-BF3B-59279CD16053} = {A82B5A2D-DB10-4E8F-AEC5-02211FF7DEEE}
 		{CE530D63-F43A-4C29-A0EC-32CCD28E5CE1} = {6547E9C0-6492-4662-B914-B865C538C3E4}
 		{8124FE31-555A-4C48-85A9-5A4AB9112773} = {67315B76-5C83-4A96-A57F-A26C45EA93B0}
+		{6F36347F-92B1-4E1A-93A7-4E9CADB87EAF} = {6547E9C0-6492-4662-B914-B865C538C3E4}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {C5FB3B80-42EC-4C35-BF3B-2DBF6DEEEFA2}

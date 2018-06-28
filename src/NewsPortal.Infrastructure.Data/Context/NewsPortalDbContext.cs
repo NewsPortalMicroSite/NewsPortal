@@ -1,6 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using NewsPortal.Domain.Entitites.News;
-using NewsPortal.Infrastructure.Data.Mapping.News;
+using NewsPortal.Domain.Entities.Users;
+using NewsPortal.Domain.Entitites.Articles;
+using NewsPortal.Infrastructure.Data.Mapping.Article;
 using NewsPortal.Infrastructure.Data.Mapping.User;
  
 
@@ -14,21 +15,23 @@ namespace NewsPortal.Infrastructure.Data.Context
         {
             if (!optionsBuilder.IsConfigured)
             {
-                optionsBuilder.UseSqlServer("connectionstring");
+
+                optionsBuilder.UseSqlServer("Server=.\\;Database=NewsPortal_Test;Trusted_Connection=True;");
             }
         }
 
-        public DbSet<News> News { get; set; }
-        public DbSet<NewsComment> NewsComment { get; set; }
-        public DbSet<NewsLike> NewsLike { get; set; }
+        public DbSet<Article> Article { get; set; }
+        public DbSet<ArticleComment> ArticleComment { get; set; }
+        public DbSet<ArticleLike> ArticleLike { get; set; }
+        public DbSet<User> Users { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
-        {
-            modelBuilder.ApplyConfiguration(new NewsMap());
-            modelBuilder.ApplyConfiguration(new NewsCommentMap());
-            modelBuilder.ApplyConfiguration(new NewsLikeMap());
-
+        { 
+            modelBuilder.ApplyConfiguration(new ArticleMap());
+            modelBuilder.ApplyConfiguration(new ArticleCommentsMap());
+            modelBuilder.ApplyConfiguration(new ArticleLikeMap());
             modelBuilder.ApplyConfiguration(new UserMap());
         }
+
     }
 }
