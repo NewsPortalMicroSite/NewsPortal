@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using NewsPortal.Domain.Entitites.Articles;
 
-namespace NewsPortal.Infrastructure.Data.Mapping.Article
+namespace NewsPortal.Infrastructure.Data.EF.Mapping.Article
 {
     public class ArticleLikeMap : IEntityTypeConfiguration<ArticleLike>
     {

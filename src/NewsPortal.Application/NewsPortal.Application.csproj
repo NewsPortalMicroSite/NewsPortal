@@ -11,7 +11,6 @@
   <ItemGroup>
     <ProjectReference Include="..\NewsPortal.Domain\NewsPortal.Domain.csproj" />
     <ProjectReference Include="..\NewsPortal.Infrastructure.CrossCutting\NewsPortal.Infrastructure.CrossCutting.csproj" />
-    <ProjectReference Include="..\NewsPortal.Infrastructure.Data\NewsPortal.Infrastructure.Data.EF.csproj" />
   </ItemGroup>
 
 </Project>

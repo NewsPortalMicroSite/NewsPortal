@@ -11,6 +11,6 @@ namespace NewsPortal.Application.Interfaces.Article
 
         int GetTotalLikes();
 
-        int GetTotalLikesByNewsId(int newsId);
+        int GetTotalLikesByArticleId(int articleId);
     }
 }

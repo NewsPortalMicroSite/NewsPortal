@@ -10,6 +10,6 @@ namespace NewsPortal.Domain.Entitites.Articles
         public int UserId { get; set; }
         public string Comment { get; set; }
         public virtual Article Article { get; set; }
-        public User User { get; set; }
+        public virtual User User { get; set; }
     }
 }

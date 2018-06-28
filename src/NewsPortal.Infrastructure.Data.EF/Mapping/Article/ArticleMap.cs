@@ -2,7 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
-namespace NewsPortal.Infrastructure.Data.Mapping.Article
+namespace NewsPortal.Infrastructure.Data.EF.Mapping.Article
 {
     public class ArticleMap : IEntityTypeConfiguration<Domain.Entitites.Articles.Article>
     {
