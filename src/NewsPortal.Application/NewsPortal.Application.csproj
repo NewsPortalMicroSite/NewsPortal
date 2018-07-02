@@ -5,12 +5,13 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="AutoMapper\" />
+    <ProjectReference Include="..\NewsPortal.Domain\NewsPortal.Domain.csproj" />
+    <ProjectReference Include="..\NewsPortal.Infrastructure.CrossCutting\NewsPortal.Infrastructure.CrossCutting.csproj" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\NewsPortal.Domain\NewsPortal.Domain.csproj" />
-    <ProjectReference Include="..\NewsPortal.Infrastructure.CrossCutting\NewsPortal.Infrastructure.CrossCutting.csproj" />
+    <Folder Include="Interfaces\" />
+    <Folder Include="NewFolder\" />
   </ItemGroup>
 
 </Project>

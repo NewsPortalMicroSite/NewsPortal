@@ -4,7 +4,7 @@ using NewsPortal.Infrastructure.Data.Context;
 using NewsPortal.Infrastructure.Data.Repository.Common;
  
 
-namespace NewsPortal.Infrastructure.Data.Repository.News
+namespace NewsPortal.Infrastructure.Data.Repository
 {
     public class ArticleRepository  : BaseRepository<Article>, IArticleRepository
     {

@@ -1,8 +1,10 @@
 ﻿using NewsPortal.Domain.Entities.Common;
 using NewsPortal.Domain.Entities.Users;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace NewsPortal.Domain.Entitites.Articles
 {
+    [Table("ArticleComments")]
     public class ArticleComment  : CreatedDateEntity
     {
        
